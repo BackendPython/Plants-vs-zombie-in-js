@@ -17,7 +17,11 @@ body{
     justify-content: center;
 }
 .top{
+    width: 10%;
+    height: 10%;
     animation: idle 2s ease;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 @keyframes plants-1-idle {
     0%{

@@ -1,1 +1,0 @@
-console.log(100/7);
