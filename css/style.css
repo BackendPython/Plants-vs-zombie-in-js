@@ -19,9 +19,10 @@ body{
 .top{
     width: 10%;
     height: 10%;
-    animation: idle 2s ease;
+    border: 2px solid black;
     background-position: center;
     background-repeat: no-repeat;
+    animation: plants-1-idle 2s ease infinite;
 }
 @keyframes plants-1-idle {
     0%{
