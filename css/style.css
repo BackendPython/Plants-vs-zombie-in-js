@@ -24,6 +24,11 @@ body{
     position: absolute;
     background-color: rgb(218, 119, 32);
 }
+.control-panel .plants{
+    width: 60%;
+    height: 80%;
+    border: 2px solid tan;
+}
 
 
 @keyframes plants-1-idle {
