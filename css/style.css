@@ -18,9 +18,11 @@ body{
     justify-content: center;
 }
 .control-panel{
+    top: 0%;
     width: 100%;
-    height: 20%;
+    height: 15%;
     position: absolute;
+    background-color: rgb(218, 119, 32);
 }
 
 
