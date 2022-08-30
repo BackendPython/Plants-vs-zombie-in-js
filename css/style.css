@@ -13,11 +13,14 @@ body{
     width: 100%;
     height: 100vh;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
 }
-.top{
-    
+.control-panel{
+    width: 100%;
+    height: 20%;
+    position: absolute;
 }
 
 
