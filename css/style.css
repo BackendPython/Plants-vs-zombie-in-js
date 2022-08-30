@@ -17,12 +17,7 @@ body{
     justify-content: center;
 }
 .top{
-    width: 10%;
-    height: 10%;
-    border: 2px solid black;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: plants-1-attack 1s infinite;
+    
 }
 
 
