@@ -15,7 +15,11 @@ body{
     display: flex;
     position: relative;
     align-items: center;
+    background-size: cover;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('/images/components/game-background.png');
 }
 .control-panel{
     top: 0%;
@@ -60,6 +64,7 @@ body{
     align-items: center;
     background-size: 100%;
     justify-content: center;
+    border: 1px solid black;
     background-repeat: no-repeat;
     box-shadow: 1px 1px 3px black, -1px -1px 3px;
 }
@@ -67,22 +72,35 @@ body{
     background-image: url('/images/components/shop/peo-close.png');
 }
 .box.sun{
-    background-image: url('/images/components/shop/sun-close.jpg');
+    background-image: url('/images/components/shop/sun-close.png');
 }
 
 /* ground styles */
 .grounds{
-    bottom: 0%;
-    width: 100%;
-    height: 85%;
+    left: 12%;
+    bottom: 5%;
+    width: 63%;
+    height: 80%;
+    display: grid;
+    flex-wrap: wrap;
     position: absolute;
-    background-color: royalblue;
+    align-items: center;
+    border: 2px solid rebeccapurple;
+    grid-template-columns: repeat(9, 1fr);
+}
+.grounds .ground{
+    width: 90%;
+    height: 100%;
+    border: 1px solid black;
 }
 
 /* open and close classes */
+.box.top{
+    margin-top: 5%;
+}
 .box.peo.open{
     background-image: url('/images/components/shop/peo-open.png') !important;
 }
 .box.sun.open{
-    background-image: url('/images/components/shop/sun-open.jpg') !important;
+    background-image: url('/images/components/shop/sun-open.png') !important;
 }
