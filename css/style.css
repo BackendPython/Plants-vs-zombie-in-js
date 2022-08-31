@@ -63,14 +63,11 @@ body{
     background-repeat: no-repeat;
     box-shadow: 1px 1px 3px black, -1px -1px 3px;
 }
-.plants-1{
-    background-image: url('/images/components/shop/plants-1-close.png');
+.box.peo{
+    background-image: url('/images/components/shop/peo-close.png');
 }
 .box.sun{
     background-image: url('/images/components/shop/sun-close.jpg');
-}
-.box.sun.open{
-    background-image: url('/images/components/shop/sun-open.jpg') !important;
 }
 
 /* ground styles */
@@ -83,6 +80,9 @@ body{
 }
 
 /* open and close classes */
-.plants-1.open{
+.box.peo.open{
     background-image: url('/images/components/shop/peo-open.png') !important;
+}
+.box.sun.open{
+    background-image: url('/images/components/shop/sun-open.jpg') !important;
 }
