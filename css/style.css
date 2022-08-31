@@ -27,6 +27,15 @@ body{
     justify-content: center;
     background-color: rgb(218, 119, 32);
 }
+.control-panel .points{
+    width: 10%;
+    height: 80%;
+    display: flex;
+    color: yellow;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+}
 .control-panel .plants{
     left: 1%;
     width: 50%;
@@ -44,7 +53,6 @@ body{
     align-items: center;
     background-size: 100%;
     justify-content: center;
-    background-image: url('/images/plants/peo/attack/peo-attack.gif');
     background-repeat: no-repeat;
     box-shadow: 3px 3px 3px black, -3px -3px 3px;
 }
