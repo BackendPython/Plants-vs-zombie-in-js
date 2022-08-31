@@ -2,7 +2,7 @@ let plants = document.querySelectorAll('.plants')
 let pointsBox = document.querySelector('.points')
 
 let game_components = {
-    points: 75,
+    points: 80,
     gameStart: true,
 }
 
@@ -23,5 +23,7 @@ let plants_2_details = {
 
 
 let mainChecking = setInterval(() => {
-
+    if (game_components.gameStart==true) {
+        pointsBox.textContent = game_components.points
+    }
 }, 10);
