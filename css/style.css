@@ -37,6 +37,14 @@ body{
     justify-content: center;
     border: 2px solid tan;
 }
+.control-panel .plants .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 10%;
+    
+}
 
 
 @keyframes plants-1-idle {
