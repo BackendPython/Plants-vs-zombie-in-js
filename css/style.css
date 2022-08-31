@@ -49,48 +49,8 @@ body{
 }
 
 .plants-1-close{
-    background-image: url('/images/components/shop/plants-1-close.png');
+    background-image: url('/images/components/');
 }
 .plants-1-open{
     background-image: url('/images/components/shop/plants-1-open.png');
-}
-
-
-@keyframes plants-1-idle {
-    0%{
-        background-image: url('/images/plants/plant-1/idle/idle-1.png');
-    }
-    14%{
-        background-image: url('/images/plants/plant-1/idle/idle-2.png');
-    }
-    29%{
-        background-image: url('/images/plants/plant-1/idle/idle-3.png');
-    }
-    44%{
-        background-image: url('/images/plants/plant-1/idle/idle-4.png');
-    }
-    58%{
-        background-image: url('/images/plants/plant-1/idle/idle-5.png');
-    }
-    72%{
-        background-image: url('/images/plants/plant-1/idle/idle-6.png');
-    }
-    86%{
-        background-image: url('/images/plants/plant-1/idle/idle-7.png');
-    }
-    100%{
-        background-image: url('/images/plants/plant-1/idle/idle-8.png');
-    }
-}
-
-@keyframes plants-1-attack {
-    0%{
-        background-image: url('/images/plants/plant-1/attack/attack-1.png');
-    }
-    50%{
-        background-image: url('/images/plants/plant-1/attack/attack-2.png');
-    }
-    100%{
-        background-image: url('/images/plants/plant-1/attack/attack-3.png');
-    }
 }
