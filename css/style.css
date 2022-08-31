@@ -39,6 +39,10 @@ body{
     letter-spacing: 5px;
     justify-content: center;
 }
+.control-panel .points-box img{
+    width: 50%;
+    height: 80%;
+}
 .control-panel .plants{
     left: 1%;
     width: 50%;
@@ -57,12 +61,25 @@ body{
     background-size: 100%;
     justify-content: center;
     background-repeat: no-repeat;
-    box-shadow: 3px 3px 3px black, -3px -3px 3px;
+    box-shadow: 1px 1px 3px black, -1px -1px 3px;
 }
-
-.plants-1-close{
+.plants-1{
     background-image: url('/images/components/shop/plants-1-close.png');
 }
-.plants-1-open{
-    background-image: url('/images/components/shop/plants-1-open.png');
+.box.sun{
+    background-image: url('/images/components/shop/');
+}
+
+/* ground styles */
+.grounds{
+    bottom: 0%;
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    background-color: royalblue;
+}
+
+/* open and close classes */
+.plants-1.open{
+    background-image: url('/images/components/shop/plants-1-open.png') !important;
 }
