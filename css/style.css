@@ -29,25 +29,24 @@ body{
 }
 .control-panel .plants{
     left: 1%;
-    width: 60%;
+    width: 50%;
     height: 80%;
     display: flex;
     position: absolute;
     align-items: center;
     justify-content: left;
-    border: 2px solid tan;
 }
 .control-panel .plants .box{
-    width: 8%;
+    width: 10%;
     height: 80%;
     display: flex;
     margin-left: 2%;
     align-items: center;
-    border: 1px solid black;
     justify-content: center;
     background-size: contain;
+    border: 1px solid black;
     background-repeat: no-repeat;
-    background-image: url('/images/components/shop/plants-1-open.jpg');
+    background-image: url('/images/components/shop/plants-1-open.png');
 }
 
 
