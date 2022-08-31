@@ -67,7 +67,10 @@ body{
     background-image: url('/images/components/shop/plants-1-close.png');
 }
 .box.sun{
-    background-image: url('/images/components/shop/');
+    background-image: url('/images/components/shop/sun-close.jpg');
+}
+.box.sun.open{
+    background-image: url('/images/components/shop/sun-open.jpg') !important;
 }
 
 /* ground styles */
@@ -81,5 +84,5 @@ body{
 
 /* open and close classes */
 .plants-1.open{
-    background-image: url('/images/components/shop/plants-1-open.png') !important;
+    background-image: url('/images/components/shop/peo-open.png') !important;
 }
