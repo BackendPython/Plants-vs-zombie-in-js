@@ -42,11 +42,11 @@ body{
     display: flex;
     margin-left: 2%;
     align-items: center;
+    background-size: 100%;
     justify-content: center;
-    background-size: contain;
-    border: 1px solid black;
+    box-shadow: 3px 3px 3px black, -3px -3px 3px;
     background-repeat: no-repeat;
-    background-image: url('/images/components/shop/plants-1-open.png');
+    background-image: url('/images/components/shop/plants-1-close.png');
 }
 
 
