@@ -44,9 +44,15 @@ body{
     align-items: center;
     background-size: 100%;
     justify-content: center;
-    box-shadow: 3px 3px 3px black, -3px -3px 3px;
     background-repeat: no-repeat;
+    box-shadow: 3px 3px 3px black, -3px -3px 3px;
+}
+
+.plants-1-close{
     background-image: url('/images/components/shop/plants-1-close.png');
+}
+.plants-1-open{
+    background-image: url('/images/components/shop/plants-1-open.png');
 }
 
 
