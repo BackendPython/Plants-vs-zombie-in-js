@@ -27,13 +27,16 @@ body{
     justify-content: center;
     background-color: rgb(218, 119, 32);
 }
-.control-panel .points{
+.control-panel .points-box{
+    right: 10%;
     width: 10%;
     height: 80%;
     display: flex;
     color: yellow;
-    font-size: 40px;
+    font-size: 20px;
+    position: absolute;
     align-items: center;
+    letter-spacing: 5px;
     justify-content: center;
 }
 .control-panel .plants{
