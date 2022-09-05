@@ -81,6 +81,7 @@ body{
     bottom: 5%;
     width: 63%;
     height: 80%;
+    z-index: 10;
     display: grid;
     flex-wrap: wrap;
     position: absolute;
@@ -94,6 +95,11 @@ body{
     /* border: 1px solid black; */
     background-position: center;
     background-repeat: no-repeat;
+}
+.grounds .sun-point{
+    width: 7%;
+    height: 10%;
+    position: absolute;
 }
 .zombies{
     width: 80%;

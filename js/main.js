@@ -14,7 +14,6 @@ let game_components = {
     line_3_zombies: 0,
     line_4_zombies: 0,
     line_5_zombies: 0,
-
 }
 
 let peo = {
@@ -55,6 +54,8 @@ let mainChecking = setInterval(() => {
 }, 10);
 
 let plants_put = setInterval(() => {
+
+    // plants put ground
     grounds.forEach(function(ground){
         ground.addEventListener('click', function(){
             if (game_components.select_plant!=null&&ground.classList=='ground open') {
@@ -77,6 +78,7 @@ let plants_put = setInterval(() => {
     })
     
     
+    // plants_shop select cards
     plants_shop.forEach(function(plant){
         plant.addEventListener('click', function(){
             if (plant.classList[2]=='open') {
@@ -94,15 +96,22 @@ let plants_put = setInterval(() => {
             }
         })
     }) 
+
+
 }, 10);
 
 
+setInterval(() => {
+    game_components.points = game_components.points + 10
+}, 1000);
 
 
 // point set
-setTimeout( function points() {
-    game_components.points = game_components.points + 10
+function sun_flower(){
+    let flowers = document.querySelector('')
     setTimeout(() => {
-        points()
-    }, 1000);
-},1000);
+        sun_flower()
+    }, 3000);
+}
+sun_flower()
+
