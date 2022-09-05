@@ -91,7 +91,10 @@ body{
 .grounds .ground{
     width: 90%;
     height: 100%;
+    background-size: contain;
     border: 1px solid black;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* open and close classes */

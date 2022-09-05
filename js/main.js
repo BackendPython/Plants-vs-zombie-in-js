@@ -3,6 +3,7 @@ let grounds = document.querySelectorAll('.ground')
 let pointsBox = document.querySelector('.points')
 
 
+
 // game informations and main settings
 let game_components = {
     points: 40,
@@ -14,12 +15,15 @@ let peo = {
     heal: 10,
     power: 100,
     power_attack: 10,
+    idle: '/images/plants/peo/idle/peo-idle.gif',
+    attack: '/images/plants/peo/attack/peo-attack.gif',
 }
 
 let sun = {
     heal: 5,
     power: 50,
     recover_time: 3000,
+    idle: '/images/plants/sun/idle/sun-idle.gif',
 }
 
 
@@ -43,7 +47,9 @@ let mainChecking = setInterval(() => {
 
 let putChecking = setInterval(() => {
     grounds.forEach(function(ground){
-        grounds.addEventListener('click')
+        ground.addEventListener('click', function(){
+            
+        })
     })
 }, 10);
 
