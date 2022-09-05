@@ -98,16 +98,16 @@ body{
 }
 .grounds .sun-point{
     top: 50%;
-    left: 20%;
+    left: 10%;
     width: 7%;
     height: 10%;
     z-index: 50;
-    transition: 1s;
+    transition: 0.7s;
     position: absolute;
 }
 .grounds .collect{
-    top: 0%;
-    right: -100%;
+    top: -15%;
+    left: 110%;
 }
 .zombies{
     width: 80%;

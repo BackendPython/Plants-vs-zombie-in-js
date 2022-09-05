@@ -59,7 +59,14 @@ let plants_put = setInterval(() => {
 
     // sun-point collect 
     sun_points.forEach(function(point){
-        
+        point.addEventListener('click', function(){
+            if (point.classList=='sun-point') {
+                point.classList.add('collect')
+                setTimeout(() => {
+                    point.remove()
+                }, 700);
+            }
+        })
     })
 
     // plants put ground
