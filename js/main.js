@@ -64,6 +64,7 @@ let plants_put = setInterval(() => {
                 }
                 plants_shop.forEach(function(down){
                     down.classList.remove('top')
+                    game_components.select_plant = null;
                 })
             }
         })
