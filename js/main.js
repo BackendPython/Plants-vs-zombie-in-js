@@ -27,6 +27,7 @@ let peo = {
 let sun = {
     heal: 5,
     power: 50,
+    useful: 25,
     recover_time: 3000,
     idle: "url('/images/plants/sun/idle/sun-idle.gif')"
 }
@@ -64,6 +65,7 @@ let plants_put = setInterval(() => {
                 point.classList.add('collect')
                 setTimeout(() => {
                     point.remove()
+                    game_components.points = game_components.points + sun.useful
                 }, 700);
             }
         })
