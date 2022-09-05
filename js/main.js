@@ -7,7 +7,7 @@ let pointsBox = document.querySelector('.points')
 
 // game informations and main settings
 let game_components = {
-    points: 70,
+    points: 75,
     gameStart: true,
     select_plant: null,
     line_1_zombies: 0,
@@ -30,7 +30,8 @@ let sun = {
     power: 50,
     useful: 25,
     recover_time: 3000,
-    idle: "url('/images/plants/sun/idle/sun-idle.gif')"
+    point_image: "url('/images/components/point.png')",
+    idle: "url('/images/plants/sun/idle/sun-idle.gif')",
 }
 
 
@@ -38,12 +39,12 @@ let mainChecking = setInterval(() => {
     plants_shop.forEach(function(plant){
     if (game_components.gameStart==true) {
         pointsBox.textContent = game_components.points
-        if (game_components.points>peo.power-10) {
+        if (game_components.points>=peo.power) {
                 if (plant.classList=='box peo') {
                     plant.classList.add('open')
                 }
         }
-        if (game_components.points>sun.power-10) {
+        if (game_components.points>=sun.power) {
                 if (plant.classList=='box sun') {
                     plant.classList.add('open')
                 }
@@ -145,6 +146,7 @@ function sun_flower(){
                 if (flower.id=='sun-3') {
                    let point = document.createElement('img')
                    point.setAttribute('class', 'sun-point')
+                   point.src = sun.point_image
                    flower.appendChild(point)
                    flower.id = ''
                 }

@@ -99,7 +99,7 @@ body{
 }
 .grounds .ground .sun-point{
     top: 0%;
-    left: 0%;
+    left: 40%;
     width: 30%;
     height: 30%;
     z-index: 50;
