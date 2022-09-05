@@ -43,7 +43,7 @@ let mainChecking = setInterval(() => {
 
 let putChecking = setInterval(() => {
     grounds.forEach(function(ground){
-        
+        grounds.addEventListener('click')
     })
 }, 10);
 
@@ -53,6 +53,8 @@ plants_shop.forEach(function(plant){
             down.classList.remove('top')
         })
         plant.classList.add('top')
+        game_components.select_plant = plant.classList
+        console.log(game_components.select_plant);
     })
 })
 
