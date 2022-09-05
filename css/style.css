@@ -95,6 +95,12 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+.zombies{
+    width: 70%;
+    height: 80%;
+    display: grid;
+    /* border: 2px solid red; */
+}
 
 /* open and close classes */
 .box.top{
