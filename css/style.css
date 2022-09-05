@@ -104,12 +104,12 @@ body{
     height: 50%;
     z-index: 50;
     position: absolute;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
-.ground .ground .sun-point.turn{
-    top: 20%;
+.grounds .ground .turn{
+    top: 10%;
     left: 60%;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 .grounds .ground .collect{
     top: -75%;

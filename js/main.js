@@ -148,7 +148,9 @@ function sun_flower(){
                     point.setAttribute('class', 'sun-point')
                     point.src = sun.point_image
                     flower.appendChild(point)
-                    point.classList.add('')
+                    setTimeout(() => {
+                        point.classList.add('turn')
+                    }, 100);
                     point.alt = 'error'
                     flower.id = ''
                 }
