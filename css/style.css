@@ -85,14 +85,13 @@ body{
     flex-wrap: wrap;
     position: absolute;
     align-items: center;
-    border: 2px solid rebeccapurple;
     grid-template-columns: repeat(9, 1fr);
 }
 .grounds .ground{
     width: 90%;
     height: 100%;
     background-size: contain;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-position: center;
     background-repeat: no-repeat;
 }

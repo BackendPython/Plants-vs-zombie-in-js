@@ -41,6 +41,9 @@ let mainChecking = setInterval(() => {
                     plant.classList.add('open')
                 }
         }
+        else{
+            plant.classList.remove('open')
+        }
     }
     })
 }, 10);
@@ -51,7 +54,7 @@ grounds.forEach(function(ground){
         if (game_components.select_plant!=null&&ground.classList=='ground open') {
             if (game_components.select_plant=='sun') {
                 ground.style.backgroundImage = sun.idle
-                game_components.points = game_components.points - 
+                game_components.points = game_components.points - sun.power
                 ground.setAttribute('class', 'ground close sun')
             }
             if (game_components.select_plant=='peo') {
@@ -73,6 +76,9 @@ plants_shop.forEach(function(plant){
             game_components.select_plant = plant.classList[1]
         }
         else{
+            plants_shop.forEach(function(down){
+                down.classList.remove('top')
+            })
             game_components.select_plant = null;
         }
     })
