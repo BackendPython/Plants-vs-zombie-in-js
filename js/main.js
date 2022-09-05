@@ -29,7 +29,7 @@ let sun = {
     heal: 5,
     power: 50,
     useful: 25,
-    recover_time: 5000,
+    recover_time: 3000,
     point_image: '/images/components/point.png',
     idle: "url('/images/plants/sun/idle/sun-idle.gif')",
 }
@@ -143,6 +143,8 @@ function sun_flower(){
                 flower.id = 'sun-3'
             }
             setTimeout(() => {
+                let random = Math.floor(Math.random()*10000)
+                console.log(random);
                 if (flower.id=='sun-3') {
                     let point = document.createElement('img')
                     point.setAttribute('class', 'sun-point')
@@ -152,7 +154,10 @@ function sun_flower(){
                         point.classList.add('turn')
                     }, 100);
                     point.alt = 'error'
-                    flower.id = ''
+                    flower.id = 'block'
+                    setTimeout(() => {
+                        flower.id = ''
+                    }, random);
                 }
             }, 100);
 
