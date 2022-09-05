@@ -23,7 +23,7 @@ let sun = {
     heal: 5,
     power: 50,
     recover_time: 3000,
-    idle: '/images/plants/sun/idle/sun-idle.gif',
+    idle: "url('/images/plants/sun/idle/sun-idle.gif')"
 }
 
 
@@ -45,22 +45,36 @@ let mainChecking = setInterval(() => {
     })
 }, 10);
 
-let putChecking = setInterval(() => {
-    grounds.forEach(function(ground){
-        ground.addEventListener('click', function(){
-            
-        })
+
+grounds.forEach(function(ground){
+    ground.addEventListener('click', function(){
+        if (game_components.select_plant!=null&&ground.classList=='ground open') {
+            if (game_components.select_plant=='sun') {
+                ground.style.backgroundImage = sun.idle
+                game_components.points = game_components.points - 
+                ground.setAttribute('class', 'ground close sun')
+            }
+            if (game_components.select_plant=='peo') {
+                ground.style.backgroundImage = peo.idle
+                ground.setAttribute('class', 'ground close peo')
+            }
+        }
     })
-}, 10);
+})
+
 
 plants_shop.forEach(function(plant){
     plant.addEventListener('click', function(){
-        plants_shop.forEach(function(down){
-            down.classList.remove('top')
-        })
-        plant.classList.add('top')
-        game_components.select_plant = plant.classList
-        console.log(game_components.select_plant);
+        if (plant.classList[2]=='open') {
+            plants_shop.forEach(function(down){
+                down.classList.remove('top')
+            })
+            plant.classList.add('top')
+            game_components.select_plant = plant.classList[1]
+        }
+        else{
+            game_components.select_plant = null;
+        }
     })
 })
 
