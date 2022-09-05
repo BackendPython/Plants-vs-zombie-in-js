@@ -1,3 +1,4 @@
+let ground_parent = document.querySelector('.grounds')
 let plants_shop = document.querySelectorAll('.box')
 let grounds = document.querySelectorAll('.ground')
 let pointsBox = document.querySelector('.points')
@@ -126,10 +127,40 @@ setInterval(() => {
 
 // point set
 function sun_flower(){
-    let flowers = document.querySelector('')
+    let time = true
+    let flowers = document.querySelector('.grounds').querySelectorAll('.sun')
+    
+    if (time==true) {
+        flowers.forEach(function(flower){
+            if (flower.id==''|flower.id=='sun3-collect') {
+                flower.id = 'sun-1'
+            }
+            else if(flower.id=='sun-1'){
+                flower.id = 'sun-2'
+            }
+            else if(flower.id=='sun-2'){
+                flower.id = 'sun-3'
+            }
+            setTimeout(() => {
+                if (flower.id=='sun-3') {
+                   let flower_top = parseInt(window.getComputedStyle(flower).getPropertyValue('top'))
+                   let flower_left = parseInt(window.getComputedStyle(flower).getPropertyValue('left'))
+                   let point = document.createElement('div')
+                   point.appendChild(ground_parent)
+                   point.setAttribute('class', 'sun-point')
+                   point.style.right = ''
+                   point.style.left = ''
+                }
+            }, 100);
+            time = false
+        })
+    }
+
     setTimeout(() => {
+        time = true
         sun_flower()
-    }, 3000);
+        console.log(time);
+    }, sun.recover_time);
 }
 sun_flower()
 
