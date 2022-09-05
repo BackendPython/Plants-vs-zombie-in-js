@@ -7,7 +7,7 @@ let pointsBox = document.querySelector('.points')
 
 // game informations and main settings
 let game_components = {
-    points: 40,
+    points: 70,
     gameStart: true,
     select_plant: null,
     line_1_zombies: 0,
@@ -120,9 +120,11 @@ let plants_put = setInterval(() => {
 }, 10);
 
 
-setInterval(() => {
-    game_components.points = game_components.points + 10
-}, 1000);
+// points ++
+
+// setInterval(() => {
+//     game_components.points = game_components.points + 10
+// }, 1000);
 
 
 // point set
