@@ -7,6 +7,7 @@ let pointsBox = document.querySelector('.points')
 let game_components = {
     points: 40,
     gameStart: true,
+    select_plant: null,
 }
 
 let peo = {
@@ -37,6 +38,12 @@ let mainChecking = setInterval(() => {
                 }
         }
     }
+    })
+}, 10);
+
+let putChecking = setInterval(() => {
+    grounds.forEach(function(ground){
+        
     })
 }, 10);
 
