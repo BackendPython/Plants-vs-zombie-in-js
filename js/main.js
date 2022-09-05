@@ -15,8 +15,8 @@ let peo = {
     heal: 10,
     power: 100,
     power_attack: 10,
-    idle: '/images/plants/peo/idle/peo-idle.gif',
-    attack: '/images/plants/peo/attack/peo-attack.gif',
+    idle: "url('/images/plants/peo/idle/peo-idle.gif')",
+    attack: "url('/images/plants/peo/attack/peo-attack.gif')",
 }
 
 let sun = {
