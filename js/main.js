@@ -54,6 +54,13 @@ let mainChecking = setInterval(() => {
 }, 10);
 
 let plants_put = setInterval(() => {
+    
+    let sun_points = document.querySelectorAll('.sun-point')
+
+    // sun-point collect 
+    sun_points.forEach(function(point){
+        
+    })
 
     // plants put ground
     grounds.forEach(function(ground){
@@ -97,6 +104,8 @@ let plants_put = setInterval(() => {
         })
     }) 
 
+    // sun_points collect
+     
 
 }, 10);
 

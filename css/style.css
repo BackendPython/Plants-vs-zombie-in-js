@@ -99,7 +99,12 @@ body{
 .grounds .sun-point{
     width: 7%;
     height: 10%;
+    z-index: 50;
     position: absolute;
+}
+.grounds .sun-point-collect{
+    right: 0%;
+    top: 0%;
 }
 .zombies{
     width: 80%;
