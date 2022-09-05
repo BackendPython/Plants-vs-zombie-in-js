@@ -9,6 +9,12 @@ let game_components = {
     points: 40,
     gameStart: true,
     select_plant: null,
+    line_1_zombies: 0,
+    line_2_zombies: 0,
+    line_3_zombies: 0,
+    line_4_zombies: 0,
+    line_5_zombies: 0,
+
 }
 
 let peo = {
