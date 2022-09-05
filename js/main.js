@@ -131,6 +131,7 @@ let plants_put = setInterval(() => {
 // point set
 function sun_flower(){
     let flowers = ground_parent.querySelectorAll('.sun')
+    let ran = Math.floor(Math.random()*flowers.length)
     
         flowers.forEach(function(flower){
             if (flower.id=='') {
@@ -143,7 +144,7 @@ function sun_flower(){
                 flower.id = 'sun-3'
             }
             setTimeout(() => {
-                let random = Math.floor(Math.random()*10000)
+                let random = Math.floor(Math.random()*4000)
                 console.log(random);
                 if (flower.id=='sun-3') {
                     let point = document.createElement('img')
@@ -153,10 +154,9 @@ function sun_flower(){
                     setTimeout(() => {
                         point.classList.add('turn')
                     }, 100);
-                    point.alt = 'error'
-                    flower.id = 'block'
+                    flowers[ran].id = 'block'
                     setTimeout(() => {
-                        flower.id = ''
+                        flowers[ran].id = ''
                     }, random);
                 }
             }, 100);
