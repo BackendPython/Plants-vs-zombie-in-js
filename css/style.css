@@ -97,14 +97,17 @@ body{
     background-repeat: no-repeat;
 }
 .grounds .sun-point{
+    top: 50%;
+    left: 20%;
     width: 7%;
     height: 10%;
     z-index: 50;
+    transition: 1s;
     position: absolute;
 }
-.grounds .sun-point-collect{
-    right: 0%;
+.grounds .collect{
     top: 0%;
+    right: -100%;
 }
 .zombies{
     width: 80%;
