@@ -5,7 +5,7 @@ let pointsBox = document.querySelector('.points')
 
 // game informations and main settings
 let game_components = {
-    points: 50,
+    points: 40,
     gameStart: true,
 }
 
@@ -19,8 +19,6 @@ let sun = {
     heal: 5,
     power: 50,
     recover_time: 3000,
-    open_class: "plants-2-open",
-    close_class: "plants-2-close",
 }
 
 
