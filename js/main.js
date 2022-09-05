@@ -127,10 +127,8 @@ setInterval(() => {
 
 // point set
 function sun_flower(){
-    let time = true
     let flowers = ground_parent.querySelectorAll('.sun')
     
-    if (time==true) {
         flowers.forEach(function(flower){
             if (flower.id==''|flower.id=='sun-3-collect') {
                 flower.id = 'sun-1'
@@ -154,12 +152,10 @@ function sun_flower(){
                    flower.id = 'sun-3-collect'
                 }
             }, 100);
-            time = false
+
         })
-    }
 
     setTimeout(() => {
-        time = true
         sun_flower()
     }, sun.recover_time);
 }
