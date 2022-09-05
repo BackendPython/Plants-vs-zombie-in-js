@@ -100,8 +100,8 @@ body{
 .grounds .ground .sun-point{
     top: 0%;
     left: 40%;
-    width: 30%;
-    height: 30%;
+    width: 60%;
+    height: 50%;
     z-index: 50;
     position: absolute;
 }

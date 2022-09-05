@@ -29,8 +29,8 @@ let sun = {
     heal: 5,
     power: 50,
     useful: 25,
-    recover_time: 3000,
-    point_image: "url('/images/components/point.png')",
+    recover_time: 5000,
+    point_image: '/images/components/point.png',
     idle: "url('/images/plants/sun/idle/sun-idle.gif')",
 }
 
@@ -148,6 +148,9 @@ function sun_flower(){
                    point.setAttribute('class', 'sun-point')
                    point.src = sun.point_image
                    flower.appendChild(point)
+                   point.style.left = '60%'
+                   point.style.top = '20%'
+                   point.alt = 'error'
                    flower.id = ''
                 }
             }, 100);
