@@ -138,12 +138,12 @@ function sun_flower(){
             if (flower.id=='') {
                 flower.id = 'sun-1'
             }
-            setTimeout(() => {
-                if(flower.id=='sun-1'){
-                    flower.id = 'sun-2'
-                }
-            }, random);
-            
+            else if(flower.id=='sun-1'){
+                flower.id = 'sun-2'
+            }
+            else if(flower.id=='sun-2'){
+                flower.id = 'sun-3'
+            }
             setTimeout(() => {
                 if (flower.id=='sun-3') {
                     let point = document.createElement('img')
@@ -153,10 +153,7 @@ function sun_flower(){
                     setTimeout(() => {
                         point.classList.add('turn')
                     }, 100);
-                    flowers[ran].id = 'block'
-                    setTimeout(() => {
-                        flowers[ran].id = ''
-                    }, random);
+                    flower.id = ''
                 }
             }, 100);
 
