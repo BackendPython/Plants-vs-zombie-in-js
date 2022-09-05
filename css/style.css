@@ -96,10 +96,18 @@ body{
     background-repeat: no-repeat;
 }
 .zombies{
-    width: 70%;
+    width: 80%;
+    bottom: -5%;
     height: 80%;
     display: grid;
-    /* border: 2px solid red; */
+    position: relative;
+    border: 2px solid red;
+}
+
+.zombies div{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
 }
 
 /* open and close classes */
