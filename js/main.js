@@ -63,7 +63,7 @@ let plants_put = setInterval(() => {
     // sun-point collect 
     sun_points.forEach(function(point){
         point.addEventListener('click', function(){
-            if (point.classList=='sun-point') {
+            if (point.classList=='sun-point turn') {
                 point.classList.add('collect')
                 setTimeout(() => {
                     point.remove()
@@ -144,14 +144,13 @@ function sun_flower(){
             }
             setTimeout(() => {
                 if (flower.id=='sun-3') {
-                   let point = document.createElement('img')
-                   point.setAttribute('class', 'sun-point')
-                   point.src = sun.point_image
-                   flower.appendChild(point)
-                   point.style.left = '60%'
-                   point.style.top = '20%'
-                   point.alt = 'error'
-                   flower.id = ''
+                    let point = document.createElement('img')
+                    point.setAttribute('class', 'sun-point')
+                    point.src = sun.point_image
+                    flower.appendChild(point)
+                    point.classList.add('')
+                    point.alt = 'error'
+                    flower.id = ''
                 }
             }, 100);
 
