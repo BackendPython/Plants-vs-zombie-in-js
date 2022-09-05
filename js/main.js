@@ -130,7 +130,7 @@ function sun_flower(){
     let flowers = ground_parent.querySelectorAll('.sun')
     
         flowers.forEach(function(flower){
-            if (flower.id==''|flower.id=='sun-3-collect') {
+            if (flower.id=='') {
                 flower.id = 'sun-1'
             }
             else if(flower.id=='sun-1'){
@@ -141,15 +141,10 @@ function sun_flower(){
             }
             setTimeout(() => {
                 if (flower.id=='sun-3') {
-                   let flower_top = parseInt(window.getComputedStyle(flower).getPropertyValue('top'))
-                   let flower_left = parseInt(window.getComputedStyle(flower).getPropertyValue('left'))
-                   let point = document.createElement('div')
+                   let point = document.createElement('img')
                    point.setAttribute('class', 'sun-point')
-                   console.log(flower_left, flower_top);
-                   point.style.left = `${flower_left}px`
-                   point.style.top = `${flower_top}px`
-                   point.appendChild(ground_parent)
-                   flower.id = 'sun-3-collect'
+                   flower.appendChild(point)
+                   flower.id = ''
                 }
             }, 100);
 

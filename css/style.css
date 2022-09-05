@@ -91,21 +91,24 @@ body{
 .grounds .ground{
     width: 90%;
     height: 100%;
+    position: relative;
     background-size: contain;
     /* border: 1px solid black; */
     background-position: center;
     background-repeat: no-repeat;
 }
-.grounds .sun-point{
-    width: 7%;
-    height: 10%;
+.grounds .ground .sun-point{
+    top: 0%;
+    left: 0%;
+    width: 30%;
+    height: 30%;
     z-index: 50;
-    transition: 0.7s;
     position: absolute;
 }
-.grounds .collect{
-    top: -15%;
-    left: 110%;
+.grounds .ground .collect{
+    top: -75%;
+    left: 1150%;
+    transition: 0.7s;
 }
 .zombies{
     width: 80%;
