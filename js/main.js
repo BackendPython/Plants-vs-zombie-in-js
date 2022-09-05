@@ -48,41 +48,46 @@ let mainChecking = setInterval(() => {
     })
 }, 10);
 
-
-grounds.forEach(function(ground){
-    ground.addEventListener('click', function(){
-        if (game_components.select_plant!=null&&ground.classList=='ground open') {
-            if (game_components.select_plant=='sun') {
-                ground.style.backgroundImage = sun.idle
-                game_components.points = game_components.points - sun.power
-                ground.setAttribute('class', 'ground close sun')
+let plants_put = setInterval(() => {
+    grounds.forEach(function(ground){
+        ground.addEventListener('click', function(){
+            if (game_components.select_plant!=null&&ground.classList=='ground open') {
+                if (game_components.select_plant=='sun') {
+                    ground.style.backgroundImage = sun.idle
+                    ground.setAttribute('class', 'ground close sun')
+                    game_components.points = game_components.points - sun.power
+                }
+                if (game_components.select_plant=='peo') {
+                    ground.style.backgroundImage = peo.idle
+                    ground.setAttribute('class', 'ground close peo')
+                    game_components.points = game_components.points - peo.power
+                }
+                plants_shop.forEach(function(down){
+                    down.classList.remove('top')
+                })
             }
-            if (game_components.select_plant=='peo') {
-                ground.style.backgroundImage = peo.idle
-                ground.setAttribute('class', 'ground close peo')
+        })
+    })
+    
+    
+    plants_shop.forEach(function(plant){
+        plant.addEventListener('click', function(){
+            if (plant.classList[2]=='open') {
+                plants_shop.forEach(function(down){
+                    down.classList.remove('top')
+                })
+                plant.classList.add('top')
+                game_components.select_plant = plant.classList[1]
             }
-        }
-    })
-})
-
-
-plants_shop.forEach(function(plant){
-    plant.addEventListener('click', function(){
-        if (plant.classList[2]=='open') {
-            plants_shop.forEach(function(down){
-                down.classList.remove('top')
-            })
-            plant.classList.add('top')
-            game_components.select_plant = plant.classList[1]
-        }
-        else{
-            plants_shop.forEach(function(down){
-                down.classList.remove('top')
-            })
-            game_components.select_plant = null;
-        }
-    })
-})
+            else{
+                plants_shop.forEach(function(down){
+                    down.classList.remove('top')
+                })
+                game_components.select_plant = null;
+            }
+        })
+    }) 
+}, 10);
 
 
 
