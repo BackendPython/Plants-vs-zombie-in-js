@@ -131,7 +131,7 @@ let plants_put = setInterval(() => {
 // point set
 function sun_flower(){
     let flowers = ground_parent.querySelectorAll('.sun')
-    let ran = Math.floor(Math.random()*flowers.length)
+    let ran = Math.floor(Math.random()*3000)
     let random = Math.floor(Math.random()*4000)
     
         flowers.forEach(function(flower){
@@ -139,10 +139,14 @@ function sun_flower(){
                 flower.id = 'sun-1'
             }
             else if(flower.id=='sun-1'){
-                flower.id = 'sun-2'
+                setTimeout(() => {
+                    flower.id = 'sun-2'
+                }, ran);
             }
             else if(flower.id=='sun-2'){
-                flower.id = 'sun-3'
+                setTimeout(() => {
+                    flower.id = 'sun-3'
+                }, random);
             }
             setTimeout(() => {
                 if (flower.id=='sun-3') {
