@@ -132,7 +132,7 @@ let plants_put = setInterval(() => {
 function sun_flower(){
     let flowers = ground_parent.querySelectorAll('.sun')
     let ran = Math.floor(Math.random()*3000)
-    let random = Math.floor(Math.random()*4000)
+    let random = Math.floor(Math.random()*9000)
     
         flowers.forEach(function(flower){
             if (flower.id=='') {
