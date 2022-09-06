@@ -29,7 +29,7 @@ let sun = {
     heal: 5,
     power: 50,
     useful: 25,
-    recover_time: 3000,
+    recover_time: 2000,
     point_image: '/images/components/point.png',
     idle: "url('/images/plants/sun/idle/sun-idle.gif')",
 }
@@ -139,14 +139,10 @@ function sun_flower(){
                 flower.id = 'sun-1'
             }
             else if(flower.id=='sun-1'){
-                setTimeout(() => {
-                    flower.id = 'sun-2'
-                }, ran);
+                flower.id = 'sun-2'
             }
             else if(flower.id=='sun-2'){
-                setTimeout(() => {
-                    flower.id = 'sun-3'
-                }, random);
+                flower.id = 'sun-3'
             }
             setTimeout(() => {
                 if (flower.id=='sun-3') {
