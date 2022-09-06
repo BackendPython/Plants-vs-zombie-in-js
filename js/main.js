@@ -144,8 +144,14 @@ function sun_flower(){
             else if(flower.id=='sun-2'){
                 flower.id = 'sun-3'
             }
+            else if(flower.id=='sun-3'){
+                flower.id = 'sun-4'
+            }
+            else if(flower.id=='sun-4'){
+                flower.id = 'sun-5'
+            }
             setTimeout(() => {
-                if (flower.id=='sun-3') {
+                if (flower.id=='sun-5') {
                     let point = document.createElement('img')
                     point.setAttribute('class', 'sun-point')
                     point.src = sun.point_image
@@ -161,7 +167,7 @@ function sun_flower(){
 
     setTimeout(() => {
         sun_flower()
-    }, sun.recover_time);
+    }, ran);
 }
 sun_flower()
 
