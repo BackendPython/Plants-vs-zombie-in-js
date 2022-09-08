@@ -34,7 +34,6 @@ let sun = {
     idle: "url('/images/plants/sun/idle/sun-idle.gif')",
 }
 
-
 let mainChecking = setInterval(() => {
     plants_shop.forEach(function(plant){
     if (game_components.gameStart==true) {
