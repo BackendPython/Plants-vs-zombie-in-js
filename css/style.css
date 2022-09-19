@@ -135,14 +135,15 @@ body{
 }
 
 .zombies .line .zombie-1{
-    top: -30%;
-    left: 95%;
-    width: 5%;
-    height: 120%;
+    top: -50%;
+    left: 90%;
+    width: 10%;
+    z-index: 30;
+    height: 150%;
     position: absolute;
     background-size: cover;
-    background-position: center;
-    background-image: url('/images/zomies/zombi-1/walk/zombi-1-walk.gif');
+    border: 1px solid black;
+    background-position: center center;
 }
 
 /* open and close classes */
