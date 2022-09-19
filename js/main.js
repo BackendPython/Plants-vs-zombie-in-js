@@ -1,3 +1,4 @@
+let zombies_parent = document.querySelector('.zombies')
 let ground_parent = document.querySelector('.grounds')
 let plants_shop = document.querySelectorAll('.box')
 let grounds = document.querySelectorAll('.ground')
@@ -8,7 +9,7 @@ let pointsBox = document.querySelector('.points')
 // game informations and main settings
 let game_components = {
     points: 75,
-    all_zombies: 3,
+    all_zombies: 5,
     gameStart: true,
     select_plant: null,
     line_1_zombies: 0,
@@ -16,6 +17,11 @@ let game_components = {
     line_3_zombies: 0,
     line_4_zombies: 0,
     line_5_zombies: 0,
+    line_1: zombies_parent[0],
+    line_2: zombies_parent[1],
+    line_3: zombies_parent[2],
+    line_4: zombies_parent[3],
+    line_5: zombies_parent[4],
 }
 
 let peo = {
@@ -121,10 +127,12 @@ let plants_put = setInterval(() => {
 }, 10);
 
 let zombies_welcoming = setInterval(() => {
-    if (game_components) {
+    if (game_components.all_zombies>0) {
         
     }
 }, 3000);
+
+
 
 // points ++
 
