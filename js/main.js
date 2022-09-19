@@ -128,7 +128,8 @@ let plants_put = setInterval(() => {
 
 let zombies_welcoming = setInterval(() => {
     if (game_components.all_zombies>0) {
-            
+        let random = Math.floor(Math.random() * 5)
+        document.createElement('div')
     }
 }, 3000);
 
