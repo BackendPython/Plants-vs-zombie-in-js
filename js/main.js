@@ -8,6 +8,7 @@ let pointsBox = document.querySelector('.points')
 // game informations and main settings
 let game_components = {
     points: 75,
+    all_zombies: 3,
     gameStart: true,
     select_plant: null,
     line_1_zombies: 0,
@@ -119,6 +120,11 @@ let plants_put = setInterval(() => {
 
 }, 10);
 
+let zombies_welcoming = setInterval(() => {
+    if (game_components) {
+        
+    }
+}, 3000);
 
 // points ++
 
