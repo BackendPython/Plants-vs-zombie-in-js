@@ -128,7 +128,7 @@ let plants_put = setInterval(() => {
 
 let zombies_welcoming = setInterval(() => {
     if (game_components.all_zombies>0) {
-        
+            
     }
 }, 3000);
 
