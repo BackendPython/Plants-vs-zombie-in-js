@@ -1,5 +1,6 @@
-let zombies_parent = document.querySelector('.zombies')
+let zombies_parent = document.querySelectorAll('.line')
 let ground_parent = document.querySelector('.grounds')
+let zombies_1 = document.querySelectorAll('.zombie-1')
 let plants_shop = document.querySelectorAll('.box')
 let grounds = document.querySelectorAll('.ground')
 let pointsBox = document.querySelector('.points')
@@ -39,6 +40,13 @@ let sun = {
     recover_time: 2000,
     point_image: '/images/components/point.png',
     idle: "url('/images/plants/sun/idle/sun-idle.gif')",
+}
+
+let zombie_1_components = {
+    heal: 1,
+    attack_power: 1,
+    recover_time: 2000,
+    walk: "url('/images/zomies/zombi-1/walk/zombi-1-walk.gif')",
 }
 
 let mainChecking = setInterval(() => {
@@ -128,9 +136,21 @@ let plants_put = setInterval(() => {
 
 let zombies_welcoming = setInterval(() => {
     if (game_components.all_zombies>0) {
-        let random = Math.floor(Math.random() * 5)
-        document.createElement('div')
+        // let random = Math.floor(Math.random() * 5)
+        let zombi_div = document.createElement('div')
+        game_components.line_1.appendChild(zombi_div)
+        zombi_div.setAttribute('class', 'zombie-1 walk')
+        zombi_div.style.backgroundImage = zombie_1_components.walk
+        game_components.line_1_zombies = game_components.line_1_zombies + 1
+
     }
+    setInterval(() => {
+        zombies_1.forEach(function(zombie_1){
+            if (zombie_1.classList=='zombie-1 walk') {
+                zombie_1.style.backgroundImage = zombie_1_components
+            }
+        })
+    }, 10);
 }, 3000);
 
 
