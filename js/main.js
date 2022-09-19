@@ -142,7 +142,7 @@ let zombies_welcoming = setInterval(() => {
         zombi_div.setAttribute('class', 'zombie-1 walk')
         zombi_div.style.backgroundImage = zombie_1_components.walk
         game_components.line_1_zombies = game_components.line_1_zombies + 1
-
+        console.log(game_components.line_1_zombies);
     }
     setInterval(() => {
         zombies_1.forEach(function(zombie_1){
